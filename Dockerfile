@@ -20,5 +20,6 @@ ENV MYSQL_PASSWORD ultical
 ENV MYSQL_DATABASE ultical
 
 # adding files
-ADD changelog.sql /docker-entrypoint-initdb.d/
-ADD test-data.sql /docker-entrypoint-initdb.d/
+# ADD changelog.sql /docker-entrypoint-initdb.d/
+# ADD test-data.sql /docker-entrypoint-initdb.d/
+ADD ultical.sql /docker-entrypoint-initdb.d/
